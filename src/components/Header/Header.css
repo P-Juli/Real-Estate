@@ -1,0 +1,58 @@
+/* .img {
+  width: 100;
+} */
+.h-wrapper {
+  /* background-color: black; */
+  color: antiquewhite;
+}
+/* .h-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} */
+/* Header.css */
+.h-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%; /* Add this line to ensure it takes up the full width */
+}
+
+.h-menu {
+  /* padding: 1rem; */
+  gap: 2rem;
+}
+
+.h-menu > a,
+.h-menu > button:hover {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    position: absolute;
+    /* its parent in App.js .App has position relative  */
+    display: block;
+    top: 1rem;
+    right: 4rem;
+    z-index: 13;
+  }
+  .h-menu {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    z-index: 12;
+    padding: 1rem;
+    align-items: flex-start;
+    box-shadow: 0px 4px 4px rgb(198, 18, 18);
+    border-radius: 7px;
+    transition: all 300ms ease-in;
+  }
+}
